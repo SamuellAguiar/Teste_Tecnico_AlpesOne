@@ -2,7 +2,6 @@
      width: 100%;
      margin: 0 auto;
      max-width: 1700px;
-     font-family: Arial, sans-serif;
 }
 
 .navbar-container {
@@ -28,12 +27,14 @@
      gap: 20px;
      margin: 0;
      padding: 0;
+     display: flex;
 }
 
 .nav-links li a {
      text-decoration: none;
-     color: black;
-     font-size: 16px;
+     font-family: 'BMWTypeNext Pro Regular', Arial, sans-serif;
+     color: #262626;
+     font-size: 14px;
      font-weight: 500;
      transition: color 0.3s;
 }
@@ -54,11 +55,11 @@
 .nav-contacts li {
      display: flex;
      align-items: center;
-     gap: 5px;
+     gap: 8px;
 }
 
 .nav-contacts img {
-     height: 20px;
+     height: 15px;
 }
 
 .nav-contacts li a {
@@ -72,23 +73,94 @@
      color: #0073e6;
 }
 
+/* Estilo para o botão do menu */
+.menu-toggle {
+     display: none;
+     /* Escondido por padrão */
+     flex-direction: column;
+     gap: 4px;
+     cursor: pointer;
+     padding: 10px;
+     background-color: #0073e6;
+     border-radius: 5px;
+}
+
+.menu-toggle span {
+     width: 25px;
+     height: 3px;
+     background-color: white;
+}
+
+.nav-overlay {
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.8);
+     z-index: 1000;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+
+.nav-overlay.active {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+}
+
+.nav-overlay .nav-links {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     text-align: center;
+}
+
+.nav-overlay .nav-links li {
+     margin: 20px 0;
+}
+
+.nav-overlay .nav-links a {
+     color: #fff;
+     text-decoration: none;
+     font-size: 24px;
+}
+
+.menu-toggle {
+     display: none;
+     cursor: pointer;
+     flex-direction: column;
+     justify-content: space-around;
+     height: 24px;
+}
+
+.menu-toggle span {
+     display: block;
+     width: 30px;
+     height: 3px;
+     background-color: #000;
+     margin: 4px 0;
+}
+
+.menu-toggle img {
+     width: 30px;
+     height: 30px;
+}
+
 @media (max-width: 768px) {
-
-     .nav-links,
-     .nav-contacts {
-          display: none;
-     }
-
      .menu-toggle {
           display: flex;
           flex-direction: column;
-          gap: 4px;
-          cursor: pointer;
+          justify-content: space-around;
+          height: 24px;
+          align-items: center;
      }
 
-     .menu-toggle span {
-          width: 25px;
-          height: 3px;
-          background-color: black;
+     .navbar .nav-links,
+     .navbar .nav-contacts {
+          display: none;
      }
 }

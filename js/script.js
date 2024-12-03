@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
      const modal = document.querySelector("#modal"); // Modal
      const close = document.querySelector("#close"); // Botão para fechar o modal
      const inputs = document.querySelectorAll("input[required], textarea[required], select[required]"); // Campos obrigatórios
+     const menuToggle = document.querySelector(".menu-toggle");
+     const navOverlay = document.querySelector(".nav-overlay");
+     const closeMenuButton = document.querySelector(".close-overlay");
 
      // Inicialmente, o botão deve estar desabilitado
      button.disabled = true;
@@ -25,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
           }
 
           // Validação específica para e-mail
-          if (input.type === "email" && !input.value.includes("@") ) {
+          if (input.type === "email" && !input.value.includes("@")) {
                displayError(input, "O e-mail deve conter o caractere '@'.");
                return false;
           }
@@ -80,5 +83,15 @@ document.addEventListener("DOMContentLoaded", function () {
           modal.close();
           form.reset();
           validateForm(); // Revalida o formulário após o reset
+     });
+
+     // Exibir o menu ao clicar no toggle
+     menuToggle.addEventListener("click", () => {
+          navOverlay.classList.add("active");
+     });
+
+     // Fechar o menu ao clicar no botão de fechar
+     closeMenuButton.addEventListener("click", () => {
+          navOverlay.classList.remove("active");
      });
 });

@@ -2,6 +2,8 @@
      background-color: #f6f6f6;
      padding: 60px 0;
      font-family: 'BMWTypeNext Pro Regular', Arial, sans-serif;
+     color: #262626;
+     font-size: 14px;
      width: 100%;
 }
 
@@ -19,8 +21,8 @@
 }
 
 .footer-socials a img {
-     width: 24px;
-     height: 24px;
+     width: 20px;
+     height: 20px;
      filter: grayscale(100%);
      transition: filter 0.3s;
 }
@@ -64,16 +66,25 @@
 
 @media (max-width: 768px) {
      .footer-container {
-          padding: 20px;
+          padding: 10px;
+          align-items: center;
+          flex-direction: column;
+          display: flex;
      }
 
      .footer-info .copyright {
           flex-direction: column;
           align-items: center;
+
      }
 
      .footer-info .credits {
           margin-left: 0;
           margin-top: 5px;
+          flex-direction: column;
+     }
+
+     .footer-info{
+          flex-direction: column;
      }
 }
