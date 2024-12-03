@@ -1,0 +1,123 @@
+body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+
+}
+
+.form-container {
+     max-width: 800px;
+     margin: auto;
+     /* Diminuir o espaço entre o formulário e a navbar */
+     background-color: #ffffff;
+     padding-bottom: 30px;
+}
+
+.form h2 {
+     text-align: center;
+     color: #333;
+     margin-bottom: 40px;
+     /* Aumentado para maior espaço entre o título e os inputs */
+}
+
+.form-group {
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 15px;
+     align-items: center;
+     text-align: center;
+}
+
+.form-group label {
+     display: none;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+     width: 340px;
+     padding: 10px;
+     font-size: 13px;
+     border: 1px solid #ccc;
+     border-radius: 6px;
+     box-sizing: border-box;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+     color: #999;
+}
+
+.form-group textarea {
+     resize: none;
+     height: 150px;
+     width: 700px;
+     /* Ajustado para o tamanho equivalente a dois inputs em linha */ 
+     margin-bottom: 25px;
+     /* Aumentado para maior espaço entre o textarea e o checkbox */
+}
+
+.form-group select {
+     background-size: 12px;
+}
+
+.form-group input[type="checkbox"] {
+     width: auto;
+     margin-right: 10px;
+}
+
+.form-group label[for="termos"] {
+     display: inline-block;
+     font-size: 14px;
+     color: #555;
+}
+
+.form-group button {
+     padding: 10px 100px;
+     font-size: 14px;
+     background-color: #0073e6;
+     color: #fff;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     transition: background-color 0.5s;
+     width: auto;
+     margin-top: 25px;
+     /* Aumentado para maior espaço entre o checkbox e o botão */
+}
+
+.form-group button:hover {
+     background-color: #005bb5;
+}
+
+.form-group a {
+     color: #0073e6;
+     text-decoration: none;
+     font-size: 14px;
+}
+
+.form-group a:hover {
+     text-decoration: underline;
+}
+
+.form .form-group-row {
+     display: flex;
+     gap: 25px;
+}
+
+.form .form-group-row .form-group {
+     flex: 1;
+}
+
+.form-group-checkbox {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-bottom: 15px;
+     text-decoration: none;
+}
+
+.form-group-checkbox a {
+     color: #0073e6;
+     text-decoration: none;
+}

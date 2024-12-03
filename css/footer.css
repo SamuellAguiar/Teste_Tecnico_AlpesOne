@@ -1,0 +1,79 @@
+.footer {
+     background-color: #f6f6f6;
+     padding: 60px 0;
+     font-family: 'BMWTypeNext Pro Regular', Arial, sans-serif;
+     width: 100%;
+}
+
+.footer-container {
+     max-width: 1200px;
+     margin: 0 auto;
+     display: column;
+     align-items: center;
+     gap: 40px;
+}
+
+.footer-socials {
+     display: flex;
+     gap: 15px;
+}
+
+.footer-socials a img {
+     width: 24px;
+     height: 24px;
+     filter: grayscale(100%);
+     transition: filter 0.3s;
+}
+
+.footer-socials a img:hover {
+     filter: grayscale(0%);
+}
+
+.footer-info {
+     display: flex;
+     justify-content: space-between;
+     flex-direction: row;
+     align-items: center;
+     width: 100%;
+}
+
+.footer-info .copyright {
+     margin-bottom: 5px;
+     font-size: 14px;
+     color: #666;
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     max-width: 1200px;
+}
+
+.footer-info .credits {
+     font-size: 14px;
+     color: #666;
+     margin-left: auto;
+}
+
+.footer-info .credits a {
+     color: #00aaff;
+     text-decoration: none;
+}
+
+.footer-info .credits a:hover {
+     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+     .footer-container {
+          padding: 20px;
+     }
+
+     .footer-info .copyright {
+          flex-direction: column;
+          align-items: center;
+     }
+
+     .footer-info .credits {
+          margin-left: 0;
+          margin-top: 5px;
+     }
+}

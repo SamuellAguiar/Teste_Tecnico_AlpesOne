@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Teste técnico estagiário - Desenvolvimento</title>
+     <link rel="stylesheet" href="css/global.css">
+     <link rel="stylesheet" href="css/navbar.css">
+     <link rel="stylesheet" href="css/form.css">
+     <link rel="stylesheet" href="css/footer.css">
+     <link rel="stylesheet" href="css/modal.css">
+
+     <link href="https://db.onlinewebfonts.com/c/ac95f91c55cc591ecf37a4d136ff8031?family=BMWTypeNext+Pro+Regular"
+          rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+     <div class="container">
+          <div class="navbar-container">
+               <nav class="navbar">
+                    <div class="nav-logo">
+                         <a href="#"><img src="/assets/PNG/BMW.png" alt="Logo da BMW"></a>
+                    </div>
+
+                    <ul class="nav-links">
+                         <li><a href="https://alpes.one/" target="_blank">Novos</a></li>
+                         <li><a href="https://alpes.one/" target="_blank">Seminovos</a></li>
+                         <li><a href="https://alpes.one/" target="_blank">Pós Vendas</a></li>
+                         <li><a href="https://alpes.one/" target="_blank">Peças e Acessórios</a></li>
+                         <li><a href="https://alpes.one/" target="_blank">Eventos</a></li>
+                         <li><a href="https://alpes.one/" target="_blank">Sobre Nós</a></li>
+                    </ul>
+
+                    <ul class="nav-contacts">
+                         <li>
+                              <img src="/assets/PNG/map pin.png" alt="Ícone Localização">
+                              <a href="https://alpes.one/" target="_self">Localização</a>
+                         </li>
+                         <li>
+                              <img src="/assets/PNG/phone.png" alt="Ícone Telefone">
+                              <a href="https://grupocarbel.gupy.io/" target="_self">Telefones</a>
+                         </li>
+                         <li>
+                              <img src="/assets/PNG/whatsapp.png" alt="Ícone WhatsApp">
+                              <a href="https://www.whatsapp.com/" target="_self">WhatsApp</a>
+                         </li>
+                    </ul>
+               </nav>
+          </div>
+     </div>
+
+     <div class="form-container">
+          <div class="form">
+               <h2>ENTRE EM CONTATO</h2>
+               <form method="dialog">
+
+                    <div class="form-group-row">
+                         <div class="form-group">
+                              <input type="text" id="name" name="nome" placeholder="Nome" required>
+                         </div>
+                         <div class="form-group">
+                              <input type="email" id="email" name="email" placeholder="E-mail" required>
+                         </div>
+                    </div>
+
+                    <div class="form-group-row">
+                         <div class="form-group">
+                              <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
+                         </div>
+                         <div class="form-group">
+                              <select id="assunto" name="assunto" required>
+                                   <option value="" disabled selected>Assunto</option>
+                                   <option value="SP">Alpes Live Car Shopping</option>
+                                   <option value="RJ">Alpes ChatBot</option>
+                                   <option value="MG">Alpes Click to Call</option>
+                              </select>
+                         </div>
+                    </div>
+
+                    <div class="form-group">
+                         <textarea id="mensagem" name="mensagem" placeholder="Mensagem" required></textarea>
+                    </div>
+
+                    <div class="form-group-checkbox">
+                         <input type="checkbox" id="checkbox" name="termos" required>
+                         <label for="termos">Aceito a <a href="#">Política de Privacidade</a></label>
+                    </div>
+
+                    <div class="form-group" id="button-modal">
+                         <button type="button">Enviar</button>
+                    </div>
+
+                    <dialog closed id="modal">
+                         <img src="assets/PNG/check.png" alt="Símbolo de Certo" class="image-modal">
+                         <h2>Olá. Sua Mensagem foi recebida com sucesso!</h2>
+                         <p>Em breve entraremos em contato.</p>
+                         <button id="close">Fechar</button>
+                    </dialog>
+               </form>
+          </div>
+     </div>
+
+
+
+     <footer class="footer">
+          <div class="footer-all">
+               <div class="footer-container">
+                    <div class="footer-socials">
+                         <a href="https://www.instagram.com/alpesonebrasil/?hl=pt-br" target="_blank"><img
+                                   src="assets/PNG/instagram.png" alt="Instagram"></a>
+                         <a href="https://www.facebook.com/AlpesOneBrasil/" target="_blank"><img
+                                   src="assets/PNG/facebook.png" alt="Facebook"></a>
+                         <a href="https://alpes.one/blog/" target="_blank"><img src="assets/PNG/youtube.png"
+                                   alt="YouTube"></a>
+                         <a href="https://www.linkedin.com/company/alpes-one/" target="_blank"><img
+                                   src="assets/PNG/linkedin.png" alt="LinkedIn"></a>
+                         <a href="https://x.com/" target="_blank"><img src="assets/PNG/x-twitter 1.png"
+                                   alt="Twitter"></a>
+                         <a href="https://www.whatsapp.com/" target="_blank"><img src="assets/PNG/whatsapp.png"
+                                   alt="WhatsApp"></a>
+                    </div>
+                    <div class="footer-info">
+                         <div class="footer-copyright">
+                              <p>© Copyright 2024 – Alpes BMW. Todos os direitos reservados.</p>
+                         </div>
+                         <div class="footer-credit">
+                              <p>Feito por: <a href="https://alpes.one/" target="_blank"><img
+                                             src="assets/PNG/logo-alpes 2.png" alt="Logo AlpesOne"></a>
+                              </p>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </footer>
+</body>
+
+<script src="js/script.js"></script>
+
+</html>
