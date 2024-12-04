@@ -2,16 +2,13 @@ body {
      font-family: Arial, sans-serif;
      margin: 0;
      padding: 0;
-     /* Ajustado para ocupar a altura total da tela */
 }
 
 .form-container {
      max-width: 800px;
      margin: 0 auto;
-     /* Diminuir o espaço entre o formulário e a navbar */
      background-color: #ffffff;
      padding-bottom: 30px;
-     /* Aumentado para maior espaço entre o formulário e o rodapé */
      padding: 30px;
      padding-top: 60px;
      padding-bottom: 170px;
@@ -21,7 +18,6 @@ body {
      text-align: center;
      color: #262626;
      margin-bottom: 40px;
-     /* Aumentado para maior espaço entre o título e os inputs */
      font-family: 'BMWTypeNext Pro Regular', Arial, sans-serif;
      font-size: 24px;
 }
@@ -58,9 +54,7 @@ body {
      resize: none;
      height: 150px;
      width: 700px;
-     /* Ajustado para o tamanho equivalente a dois inputs em linha */
      margin-bottom: 25px;
-     /* Aumentado para maior espaço entre o textarea e o checkbox */
 }
 
 .form-group select {
@@ -89,7 +83,6 @@ body {
      transition: background-color 0.5s;
      width: auto;
      margin-top: 25px;
-     /* Aumentado para maior espaço entre o checkbox e o botão */
 }
 
 .form-group button:hover {
@@ -133,7 +126,6 @@ body {
      .form-group input,
      .form-group textarea {
           width: 80%;
-          /* Ocupa 90% da largura do container */
      }
 
      .form-container {
@@ -151,13 +143,11 @@ body {
      .form p {
           font-size: 18px;
           margin-bottom: 20px;
-          /* Ajusta o título para telas menores */
      }
 
      .form-group input,
      .form-group textarea {
           width: 100%;
-          /* Ocupa a largura total do container */
      }
 
      .form-group button {
@@ -178,12 +168,10 @@ body {
      .form-group textarea {
           padding: 8px;
           font-size: 12px;
-          /* Reduz tamanho do texto em dispositivos pequenos */
      }
 
      .form-group button {
           width: 100%;
-          /* Botão ocupa toda a largura do container */
      }
 
      .form-group {

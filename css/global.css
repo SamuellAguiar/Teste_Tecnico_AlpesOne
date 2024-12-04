@@ -13,12 +13,10 @@ body {
      flex: 1;
 }
 
-/* Destaca o campo com erro */
 .error {
      border: 2px solid red;
 }
 
-/* Mensagem de erro */
 .error-message {
      color: red;
      font-size: 0.9em;
